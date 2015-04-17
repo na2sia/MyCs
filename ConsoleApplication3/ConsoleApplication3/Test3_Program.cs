@@ -9,18 +9,16 @@ namespace Test3
     {
         static void Main(string[] args)
         {
-           Triangle tri = new Triangle();
-           Console.WriteLine("Введите стороны треугольника:");
+           Triangle tri = new Triangle(1,4,3);
+          /* Console.WriteLine("Введите стороны треугольника:");
            Console.Write("a=");
            tri.A=double.Parse(Console.ReadLine());
            Console.Write("b=");
            tri.B = double.Parse(Console.ReadLine());
            Console.Write("c=");
            tri.C = double.Parse(Console.ReadLine());
-            
-            string s=(string)tri.GetCheckTriangle();
-           //string s = tri.GetCheckTriangle();
-            Console.WriteLine(s);
+           */
+            Console.WriteLine("Triangle - {0}",  tri.GetCheckTriangle());
             Console.ReadKey();
 
 
